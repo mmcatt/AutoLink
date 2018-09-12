@@ -8,6 +8,7 @@ AutoLink开源自动化测试集成解决方案.
 - AutoLink完美的支持RobotFramework所有的关键字.
 - AutoLink可以直接应用到你的企业实践中，节省框架开发成本.
 - AutoLink是很简单的，但也很容易使用.
+- AutoLink支持项目级、套件级、用例级运行
 
 ## 用户指南
 
@@ -24,6 +25,7 @@ AutoLink开源自动化测试集成解决方案.
 - [Python自定义关键字](./docs/如何调用Python自定义库.md)
 - [如何查看关键字详细文档](./docs/如何查看关键字详细文档.md)
 - [查看测试报告](./docs/查看测试报告.md)
+- [配置SMTP及邮件通知](./docs/配置SMTP服务及邮件通知.md)
 
 ## 苦叶子发起
 
@@ -45,8 +47,12 @@ AutoLink Web IDE编辑模式截图欣赏
 
 ![index](./auto/www/static/img/index.png)
 
-![dashboard](./docs/img/dashboard.png)
+![dashboard](./docs/img/dashboard_new.png)
 
 ![help](./docs/img/keyword_help.png)
 
 ![keyword](./docs/img/double_keyword.png)
+
+邮件通知截图
+
+![email](./docs/img/mail_report.png)
