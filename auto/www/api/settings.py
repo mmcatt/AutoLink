@@ -13,7 +13,7 @@ import json
 import codecs
 from flask import current_app, session, request, send_file
 from flask_restful import Resource, reqparse
-from utils.file import exists_path
+from utils.file import exists_path, make_nod
 
 
 class Settings(Resource):
@@ -88,7 +88,7 @@ class Settings(Resource):
             self.app.config["MAIL_USERNAME"] = args["username"]
             self.app.config["MAIL_PASSWORD"] = args["password"]
             self.app.config["MAIL_USE_SSL"] = args["ssl"]
-        except Expetion as e:
+        except Exception as e:
             result["status"] = "fail"
             result["msg"] = str(e)
 
@@ -112,7 +112,7 @@ class Settings(Resource):
                     continue
 
             json.dump(config, codecs.open(conf_path, 'w', 'utf-8'))
-        except Expetion as e:
+        except Exception as e:
             result["status"] = "fail"
             result["msg"] = str(e)
 
